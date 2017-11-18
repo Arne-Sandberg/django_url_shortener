@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <form method="post" action="/shorten/">
+            {% csrf_token %}
+            URL <input type="text" name="url">
+            <input type="submit" value="Shorten">
+        </form>
+    </body>
+</html>
